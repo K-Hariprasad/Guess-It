@@ -1,0 +1,57 @@
+body{
+    min-height: 80vh;
+    background: rgb(3, 43, 59);
+}
+#welcome{
+    margin-top: 15%;
+}
+.title{
+    color: white;
+    text-shadow: 0 0 10px rgba(6, 231, 220, 0.911),
+                0 0 20px rgba(6, 231, 220, 0.911),
+                0 0 40px rgba(6, 231, 220, 0.911),
+                0 0 80px rgba(6, 231, 220, 0.911),
+                0 0 160px rgba(6, 231, 220, 0.911);
+    border: solid 2px white;
+    padding:2%;
+}
+.input-box{
+    margin-top: 25%;
+}
+
+#welcome input[type = "text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    padding: 5px 8px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    width: 80%;
+  }
+  #welcome input[type = "text"]:focus{
+      border-color:  rgba(6, 231, 220, 0.911);
+  }
+  #welcome button{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid  rgba(6, 231, 220, 0.911);
+    padding: 8px 50px;
+    outline: none;
+    color: rgba(6, 231, 220, 0.911);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+  }
+  #welcome button:hover{
+    background: rgba(6, 231, 220, 0.911);
+    color: white;
+  }
+
