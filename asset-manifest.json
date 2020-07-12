@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Guess-It/static/css/main.0138c188.chunk.css",
+    "main.js": "/Guess-It/static/js/main.4b4525ed.chunk.js",
+    "main.js.map": "/Guess-It/static/js/main.4b4525ed.chunk.js.map",
+    "runtime-main.js": "/Guess-It/static/js/runtime-main.49419f77.js",
+    "runtime-main.js.map": "/Guess-It/static/js/runtime-main.49419f77.js.map",
+    "static/js/2.fbec3323.chunk.js": "/Guess-It/static/js/2.fbec3323.chunk.js",
+    "static/js/2.fbec3323.chunk.js.map": "/Guess-It/static/js/2.fbec3323.chunk.js.map",
+    "index.html": "/Guess-It/index.html",
+    "precache-manifest.bfa14a6800415363e9b128fce6ee2899.js": "/Guess-It/precache-manifest.bfa14a6800415363e9b128fce6ee2899.js",
+    "service-worker.js": "/Guess-It/service-worker.js",
+    "static/css/main.0138c188.chunk.css.map": "/Guess-It/static/css/main.0138c188.chunk.css.map",
+    "static/js/2.fbec3323.chunk.js.LICENSE.txt": "/Guess-It/static/js/2.fbec3323.chunk.js.LICENSE.txt",
+    "static/media/Game.css": "/Guess-It/static/media/smile.c081c40c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49419f77.js",
+    "static/js/2.fbec3323.chunk.js",
+    "static/css/main.0138c188.chunk.css",
+    "static/js/main.4b4525ed.chunk.js"
+  ]
+}
