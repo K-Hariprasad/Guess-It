@@ -1,23 +1,28 @@
 import React from "react";
 import './Game.css'
+import Result from  './Result'
 class Game extends React.Component {
   constructor() {
     super();
     this.state = {
+        result : '',
         left : 5,
         guess : '',
-        display : '',
-        message:'Lets guess'
+        display : '?',
+        message:'Lets guess',
+        style:{color:'white',border:'solid 2px white'}
     };
   }
   guessInput = (event) => {
      this.setState({guess:event.target.value});
   }
   submitGuess = (event) => {
-    event.preventDefault();
-    this.setState({display:this.state.guess});
-    this.setState({left:this.state.left-1});
-    this.compare()
+      event.preventDefault();
+      if(Number(this.state.left)>=1 && (this.state.guess)){
+        this.setState({display:this.state.guess,guess:''});
+        this.setState({left:this.state.left-1});
+        this.compare()}
+        ;
   }
   compare = () => {
       var input = Number(this.state.guess);
@@ -25,38 +30,54 @@ class Game extends React.Component {
       if (this.state.left>1){
         
         if(input===number){
-            this.setState({message:'You got it..!'})
+            this.setState({message:'You got it..!',result:'won'})
         }
         else if((number-2)<=input && input<=(number+2)){
-            this.setState({message:'You are too close'})
+            this.setState({
+                style:{color:'rgb(83, 225, 10)',border:'solid 2px rgb(83, 225, 10)'}
+            })
         }
         else if((number-5)<=input && input<=(number+5)){
-            this.setState({message:'You are close'})
+            this.setState({
+                style:{color:'rgb(241, 255, 10)',border:'solid 2px rgb(241, 255, 10)'}
+            })
         }
         else if((number-10)<=input && input<=(number+10)){
-            this.setState({message:'You are nearby'})
+            this.setState({
+                style:{color:'yellow',border:'solid 2px yellow'}
+            })
         }
         else if((number-20)<=input && input<=(number+20)){
-            this.setState({message:'You are little far'})
+            this.setState({
+                style:{color:'orange',border:'solid 2px orange'}
+            })
         }
         else if((number-30)<=input && input<=(number+30)){
-            this.setState({message:'You are far'})
+            this.setState({
+                style:{color:'rgb(253, 94, 2)',border:'solid 2px rgb(253, 94, 2)'}
+            }) 
         }
         else{
-            this.setState({message:'You are too far'})    
+            this.setState({
+                style:{color:'red',border:'solid 2px red'}
+            })   
         }
       }
       else{
         if(input===number){
-            this.setState({message:'You got it..!'})
+            this.setState({message:'You got it..!',result:'won'})
         }
         else{ 
-             this.setState({message:'You loose it..!'})
+             this.setState({message:'You loose it..!',result:'loose'})
             
         }
       }
   }
   render() {
+      if(this.state.result){
+          return <Result result={this.state.result}></Result>
+      }
+      else{
         return(
             <React.Fragment>
                 <div id="game" className="col-md-4 offset-md-4 text-light text-center">
@@ -70,14 +91,14 @@ class Game extends React.Component {
                 {/* <div id="message">
                     <p>{this.state.message}</p>
                 </div> */}
-                <div id="display">
-                    <p>{this.state.display}</p>
+                <div id="display" >
+                    <p style={this.state.style}>{this.state.display}</p>
                 </div>
 
                 <div id="gameInput">
                     <form onSubmit={this.submitGuess}>
                         <div>
-                            <input type="number" onChange={this.guessInput} placeholder="Guess here..."></input>
+                            <input type="number" value={this.state.guess} onChange={this.guessInput} placeholder="Guess here..."></input>
                         </div>
                         <div>
                             <button type="submit">GUESS</button>
@@ -87,6 +108,7 @@ class Game extends React.Component {
                 </div>
             </React.Fragment>
         )
+        }
     }
 }
 

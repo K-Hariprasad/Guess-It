@@ -5,7 +5,8 @@
     background-color: azure;
 }
 #gameInput{
-    margin-top:20%
+    margin-top:20%;
+    color:rgb(83, 228, 0)
 }
 #gameInput input{
     border:0;
@@ -42,4 +43,41 @@
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 15%;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+.result-won{
+    background-color: rgb(253,193,0);
+    min-height: 100vh;
+    background-image: url('../images/smile.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+    border:solid 5px white;
+}
+.result-lost{
+    background-color: #F05F24;
+    min-height: 100vh;
+    background-image: url('../images/sad.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-position-y: 80px;
+    background-repeat: no-repeat;
+    border:solid 5px rgb(51, 44, 44);
+    
+}
+.result-lost p{
+    padding-top: 50px;
+    font-size: 35px;
+}
+.result-won p{
+    padding-top: 50px;
+    font-size: 30px;
+}
+.result-won div button{
+    margin-top: 250px;
+}
+.result-lost div button{
+    margin-top: 250px;
 }
