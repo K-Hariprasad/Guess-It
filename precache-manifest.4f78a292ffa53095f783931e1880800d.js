@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "717e964c2daec3a26e8ff051c28e5a2b",
+    "revision": "20bf9cadd6590aeb864947036c0771e5",
     "url": "/Guess-It/index.html"
   },
   {
-    "revision": "84d61513742ab7ec89ec",
-    "url": "/Guess-It/static/css/main.0138c188.chunk.css"
+    "revision": "7c95d6556a47c3c60ed7",
+    "url": "/Guess-It/static/css/main.a7661fbc.chunk.css"
   },
   {
-    "revision": "4380a9c3200afefdbc1b",
-    "url": "/Guess-It/static/js/2.fbec3323.chunk.js"
+    "revision": "1570af8b7d45b3428bc9",
+    "url": "/Guess-It/static/js/2.f8509eb1.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/Guess-It/static/js/2.fbec3323.chunk.js.LICENSE.txt"
+    "url": "/Guess-It/static/js/2.f8509eb1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "84d61513742ab7ec89ec",
-    "url": "/Guess-It/static/js/main.4b4525ed.chunk.js"
+    "revision": "7c95d6556a47c3c60ed7",
+    "url": "/Guess-It/static/js/main.c81a48d1.chunk.js"
   },
   {
     "revision": "99dd7dd8a4080fc58bd8",
