@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20bf9cadd6590aeb864947036c0771e5",
+    "revision": "d7d1626ab652cdd033dd2594e8a944d5",
     "url": "/Guess-It/index.html"
   },
   {
-    "revision": "7c95d6556a47c3c60ed7",
+    "revision": "ae2392a5f6203e3df195",
     "url": "/Guess-It/static/css/main.a7661fbc.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Guess-It/static/js/2.f8509eb1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7c95d6556a47c3c60ed7",
-    "url": "/Guess-It/static/js/main.c81a48d1.chunk.js"
+    "revision": "ae2392a5f6203e3df195",
+    "url": "/Guess-It/static/js/main.80df3db5.chunk.js"
   },
   {
     "revision": "99dd7dd8a4080fc58bd8",
