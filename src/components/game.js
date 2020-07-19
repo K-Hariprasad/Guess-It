@@ -81,7 +81,7 @@ class Game extends React.Component {
   }
   render() {
       if(this.state.result){
-          return <Result result={this.state.result}></Result>
+          return <Result result={this.state.result} number={this.props.number}></Result>
       }
       else{
         return(

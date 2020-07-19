@@ -34,6 +34,9 @@ class Result extends React.Component {
                 <React.Fragment>
                     <div className="col-md-4 offset-md-4 text-center result-lost text-light">
                         <p>Bad luck, You loose the game..!</p>
+                        <div>
+                            <p>The number was {this.props.number}</p>
+                        </div>
                         <div className="pic">
                             <img src={sad} alt="sad_image"></img>
                         </div>
